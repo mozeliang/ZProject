@@ -1,0 +1,5 @@
+F:\MyWork\MyProject\ZProject\Z.Core.Common\bin\Debug\Z.Core.Common.dll
+F:\MyWork\MyProject\ZProject\Z.Core.Common\bin\Debug\Z.Core.Common.pdb
+F:\MyWork\MyProject\ZProject\Z.Core.Common\obj\Debug\Z.Core.Common.csprojResolveAssemblyReference.cache
+F:\MyWork\MyProject\ZProject\Z.Core.Common\obj\Debug\Z.Core.Common.dll
+F:\MyWork\MyProject\ZProject\Z.Core.Common\obj\Debug\Z.Core.Common.pdb
