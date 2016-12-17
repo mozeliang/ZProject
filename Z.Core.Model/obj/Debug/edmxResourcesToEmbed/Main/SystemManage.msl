@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ManagementSystemModelStoreContainer" CdmEntityContainer="ManagementSystemEntities">
+    <EntitySetMapping Name="Administrators">
+      <EntityTypeMapping TypeName="ManagementSystemModel.Administrators">
+        <MappingFragment StoreEntitySet="Administrators">
+          <ScalarProperty Name="Ad_ID" ColumnName="Ad_ID" />
+          <ScalarProperty Name="Ad_AdminAccount" ColumnName="Ad_AdminAccount" />
+          <ScalarProperty Name="Ad_AdminPassword" ColumnName="Ad_AdminPassword" />
+          <ScalarProperty Name="Ad_IsDisable" ColumnName="Ad_IsDisable" />
+          <ScalarProperty Name="Ad_IsDetele" ColumnName="Ad_IsDetele" />
+          <ScalarProperty Name="Ad_CreateTime" ColumnName="Ad_CreateTime" />
+          <ScalarProperty Name="Ad_UpdateTime" ColumnName="Ad_UpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

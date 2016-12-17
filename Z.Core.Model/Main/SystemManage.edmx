@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ManagementSystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Administrators">
+          <Key>
+            <PropertyRef Name="Ad_ID" />
+          </Key>
+          <Property Name="Ad_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad_AdminAccount" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Ad_AdminPassword" Type="nvarchar" MaxLength="32" Nullable="false" />
+          <Property Name="Ad_IsDisable" Type="smallint" Nullable="false" />
+          <Property Name="Ad_IsDetele" Type="smallint" Nullable="false" />
+          <Property Name="Ad_CreateTime" Type="datetime" Nullable="false" />
+          <Property Name="Ad_UpdateTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ManagementSystemModelStoreContainer">
+          <EntitySet Name="Administrators" EntityType="Self.Administrators" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ManagementSystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Administrators">
+          <Key>
+            <PropertyRef Name="Ad_ID" />
+          </Key>
+          <Property Name="Ad_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad_AdminAccount" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Ad_AdminPassword" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Ad_IsDisable" Type="Int16" Nullable="false" />
+          <Property Name="Ad_IsDetele" Type="Int16" Nullable="false" />
+          <Property Name="Ad_CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Ad_UpdateTime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="ManagementSystemEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Administrators" EntityType="Self.Administrators" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ManagementSystemModelStoreContainer" CdmEntityContainer="ManagementSystemEntities">
+          <EntitySetMapping Name="Administrators">
+            <EntityTypeMapping TypeName="ManagementSystemModel.Administrators">
+              <MappingFragment StoreEntitySet="Administrators">
+                <ScalarProperty Name="Ad_ID" ColumnName="Ad_ID" />
+                <ScalarProperty Name="Ad_AdminAccount" ColumnName="Ad_AdminAccount" />
+                <ScalarProperty Name="Ad_AdminPassword" ColumnName="Ad_AdminPassword" />
+                <ScalarProperty Name="Ad_IsDisable" ColumnName="Ad_IsDisable" />
+                <ScalarProperty Name="Ad_IsDetele" ColumnName="Ad_IsDetele" />
+                <ScalarProperty Name="Ad_CreateTime" ColumnName="Ad_CreateTime" />
+                <ScalarProperty Name="Ad_UpdateTime" ColumnName="Ad_UpdateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
