@@ -313,6 +313,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Z.Core.Common\Z.Core.Common.csproj">
+      <Project>{d8947169-3cb7-413a-8d67-f7242ce3c46f}</Project>
+      <Name>Z.Core.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Z.Core.Model\Z.Core.Model.csproj">
       <Project>{5fd56b00-0958-40fd-8671-e59eef5cfa41}</Project>
       <Name>Z.Core.Model</Name>
