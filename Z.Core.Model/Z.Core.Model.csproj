@@ -50,10 +50,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Main\Administrators.cs">
       <DependentUpon>SystemManage.tt</DependentUpon>
     </Compile>
+    <Compile Include="Main\Extend\Administrators.cs" />
     <Compile Include="Main\SystemManage.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
