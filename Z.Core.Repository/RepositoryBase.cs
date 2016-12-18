@@ -5,9 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Z.Core.Model.Main;
-
+/****************
+ * 描述：数据库操作类
+ * 作者：mo
+ * 创建日期：2015-06-15
+ * 修改日期：2015-06-15
+ */
 namespace Z.Core.Repository
 {
+    /// <summary>
+    /// 数据库操作
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class RepositoryBase<T> where T : class
     {
         private ManagementSystemEntities entities;
