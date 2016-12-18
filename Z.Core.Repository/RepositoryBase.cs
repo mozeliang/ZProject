@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using EntityFramework.Extensions;
+
 using Z.Core.Model.Main;
 /****************
  * 描述：数据库操作类
@@ -51,6 +55,67 @@ namespace Z.Core.Repository
                 throw ex;
             }
         }
+
+        /// <summary>
+        /// 批量添加
+        /// </summary>
+        /// <param name="listEntity"></param>
+        /// <returns></returns>
+        public virtual bool BatchCreate(List<T> listEntity)
+        {
+            try
+            {
+                var conn = (SqlConnection)entities.Database.Connection;
+                if (conn.State != ConnectionState.Open)
+                    conn.Open();
+
+                using (var bullCopy = new SqlBulkCopy(conn))
+                {
+                    bullCopy.DestinationTableName = typeof(T).Name;
+                    bullCopy.BatchSize = listEntity.Count;
+
+                    var fields = typeof(T).GetProperties();
+
+                    DataTable dt = new DataTable();
+                    foreach (var f in fields)
+                    {
+                        var column = new DataColumn();
+                        column.ColumnName = f.Name;
+                        var propertyType = f.PropertyType;
+
+                        if ((propertyType.IsGenericType) && (propertyType.GetGenericTypeDefinition() == typeof(Nullable<>)))
+                        {
+                            propertyType = propertyType.GetGenericArguments()[0];
+                        }
+                        column.DataType = propertyType;
+
+                        dt.Columns.Add(column);
+                    }
+
+                    foreach (T entity in listEntity)
+                    {
+                        var dr = dt.NewRow();
+                        foreach (var f in fields)
+                        {
+                            var pi = entity.GetType().GetProperty(f.Name);
+                            if (pi != null)
+                                dr[f.Name] = pi.GetValue(entity, null);
+                        }
+                        dt.Rows.Add(dr);
+                    }
+
+                    bullCopy.WriteToServer(dt);
+                }
+
+                if (conn.State != ConnectionState.Closed)
+                    conn.Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return true;
+        }
         /// <summary>
         /// 修改一个实体
         /// </summary>
@@ -72,6 +137,12 @@ namespace Z.Core.Repository
             {
                 throw ex;
             }
+        }
+
+        public virtual void BatchUpdate(Expression<Func<T, bool>> where, Expression<Func<T, T>> set, bool isSave = true)
+        {
+            
+
         }
         /// <summary>
         /// 删除一个实体
@@ -187,7 +258,7 @@ namespace Z.Core.Repository
             }
         }
 
-        public virtual List<T> GetList(Expression<Func<T, bool>> where, Expression<Func<T,object>> orderBy, bool isAscending)
+        public virtual List<T> GetList<orderByT>(Expression<Func<T, bool>> where, Expression<Func<T, orderByT>> orderBy, bool isAscending)
         {
             try
             {
@@ -209,5 +280,7 @@ namespace Z.Core.Repository
                 throw;
             }
         }
+
+
     }
 }

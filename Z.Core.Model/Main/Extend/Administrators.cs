@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Z.Core.Model
+namespace Z.Core.Model.Main
 {
-    public class Class1
+    public partial class Administrators
     {
     }
 }

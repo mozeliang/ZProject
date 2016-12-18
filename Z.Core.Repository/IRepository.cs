@@ -21,7 +21,12 @@ namespace Z.Core.Repository
         /// <param name="isSava">是否保存到数据库</param>
         /// <returns></returns>
         bool Create(T entity);
-
+        /// <summary>
+        /// 批量添加
+        /// </summary>
+        /// <param name="listEntity"></param>
+        /// <returns></returns>
+        bool BatchCreate(List<T> listEntity);
         /// <summary>
         /// 修改一个实体
         /// </summary>
@@ -71,6 +76,6 @@ namespace Z.Core.Repository
         /// <returns></returns>
         IQueryable<T> GetList(Expression<Func<T, bool>> where);
 
-        List<T> GetList(Expression<Func<T, bool>> where, Expression<Func<T, object>> orderBy, bool isAscending);
+        List<T> GetList<orderByT>(Expression<Func<T, bool>> where, Expression<Func<T, orderByT>> orderBy, bool isAscending);
     }
 }

@@ -15,6 +15,7 @@ namespace Z.Core.Service.Main
 
         public Administrators Create()
         {
+            var s = new List<Administrators>();
             var administrators = new Administrators()
             {
                 Ad_ID=1,
@@ -25,8 +26,13 @@ namespace Z.Core.Service.Main
                 Ad_IsDisable=1,
                 Ad_UpdateTime=DateTime.Now
             };
-            var s=repository.GetList(c=>c.Ad_IsDetele==1,d=>d.Ad_ID,false);
-            
+            for (int i = 0; i < 10; i++)
+            {
+                s.Add(administrators);
+            }
+
+            repository.BatchCreate(s);
+
             return administrators;
         }
     }
