@@ -5,6 +5,5 @@ F:\MyWork\MyProject\ZProject\Z.Core.Model\bin\Debug\EntityFramework.dll
 F:\MyWork\MyProject\ZProject\Z.Core.Model\bin\Debug\EntityFramework.SqlServer.dll
 F:\MyWork\MyProject\ZProject\Z.Core.Model\bin\Debug\EntityFramework.xml
 F:\MyWork\MyProject\ZProject\Z.Core.Model\bin\Debug\EntityFramework.SqlServer.xml
-F:\MyWork\MyProject\ZProject\Z.Core.Model\obj\Debug\Z.Core.Model.csprojResolveAssemblyReference.cache
 F:\MyWork\MyProject\ZProject\Z.Core.Model\obj\Debug\Z.Core.Model.dll
 F:\MyWork\MyProject\ZProject\Z.Core.Model\obj\Debug\Z.Core.Model.pdb
