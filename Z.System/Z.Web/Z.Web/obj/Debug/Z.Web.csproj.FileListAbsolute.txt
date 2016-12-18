@@ -106,3 +106,5 @@ F:\MyWork\MyProject\ZProject\z.System\Z.Web\Z.Web\bin\Z.Core.Service.pdb
 F:\MyWork\MyProject\ZProject\z.System\Z.Web\Z.Web\bin\Z.Core.Repository.pdb
 F:\MyWork\MyProject\ZProject\z.System\Z.Web\Z.Web\bin\EntityFramework.SqlServer.dll
 F:\MyWork\MyProject\ZProject\z.System\Z.Web\Z.Web\bin\EntityFramework.SqlServer.xml
+F:\MyWork\MyProject\ZProject\z.System\Z.Web\Z.Web\bin\Z.Core.Common.dll
+F:\MyWork\MyProject\ZProject\z.System\Z.Web\Z.Web\bin\Z.Core.Common.pdb
