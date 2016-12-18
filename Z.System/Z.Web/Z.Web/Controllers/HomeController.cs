@@ -13,8 +13,19 @@ namespace Z.Web.Controllers
         public ActionResult Index()
         {
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
-            new AdministratorsService().Create();
+            var t=new AdministratorsService().Create();
+
+            Func<int, bool> f1 = IsNumberLessThen5;
+            bool flag = f1(4);
+
             return View();
+        }
+
+        private static bool IsNumberLessThen5(int number)
+        {
+            if (number < 5)
+                return true;
+            return false;
         }
 
         public ActionResult About()

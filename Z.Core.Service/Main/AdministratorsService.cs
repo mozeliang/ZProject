@@ -17,14 +17,16 @@ namespace Z.Core.Service.Main
         {
             var administrators = new Administrators()
             {
-                Ad_AdminAccount="",
-                Ad_AdminPassword="",
+                Ad_ID=1,
+                Ad_AdminAccount="1",
+                Ad_AdminPassword="1",
                 Ad_CreateTime=DateTime.Now,
                 Ad_IsDetele=1,
                 Ad_IsDisable=1,
                 Ad_UpdateTime=DateTime.Now
             };
-            repository.Create(administrators);
+            var s=repository.GetList(c=>c.Ad_IsDetele==1,d=>d.Ad_ID,false);
+            
             return administrators;
         }
     }
