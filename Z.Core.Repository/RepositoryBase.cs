@@ -139,10 +139,15 @@ namespace Z.Core.Repository
             }
         }
 
-        public virtual void BatchUpdate(Expression<Func<T, bool>> where, Expression<Func<T, T>> set, bool isSave = true)
+        /// <summary>
+        /// 批量修改
+        /// </summary>
+        /// <param name="where"></param>
+        /// <param name="list"></param>
+        public virtual void BatchUpdate(Expression<Func<T, bool>> where, Expression<Func<T, T>> list)
         {
-            
-
+            entities.Set<T>().Where<T>(where).Update(list);
+            entities.SaveChanges();
         }
         /// <summary>
         /// 删除一个实体

@@ -11,3 +11,17 @@ F:\MyWork\MyProject\ZProject\Z.Core.Repository\obj\Debug\Z.Core.Repository.cspro
 F:\MyWork\MyProject\ZProject\Z.Core.Repository\obj\Debug\Z.Core.Repository.dll
 F:\MyWork\MyProject\ZProject\Z.Core.Repository\obj\Debug\Z.Core.Repository.pdb
 F:\MyWork\MyProject\ZProject\Z.Core.Repository\bin\Debug\EntityFramework.Extensions.dll
+D:\Users\view01\Desktop\my\ZProject\Z.Core.Repository\bin\Debug\Z.Core.Repository.dll.config
+D:\Users\view01\Desktop\my\ZProject\Z.Core.Repository\bin\Debug\Z.Core.Repository.dll
+D:\Users\view01\Desktop\my\ZProject\Z.Core.Repository\bin\Debug\Z.Core.Repository.pdb
+D:\Users\view01\Desktop\my\ZProject\Z.Core.Repository\bin\Debug\EntityFramework.dll
+D:\Users\view01\Desktop\my\ZProject\Z.Core.Repository\bin\Debug\EntityFramework.Extended.dll
+D:\Users\view01\Desktop\my\ZProject\Z.Core.Repository\bin\Debug\EntityFramework.SqlServer.dll
+D:\Users\view01\Desktop\my\ZProject\Z.Core.Repository\bin\Debug\Z.Core.Model.dll
+D:\Users\view01\Desktop\my\ZProject\Z.Core.Repository\bin\Debug\Z.Core.Model.pdb
+D:\Users\view01\Desktop\my\ZProject\Z.Core.Repository\bin\Debug\EntityFramework.xml
+D:\Users\view01\Desktop\my\ZProject\Z.Core.Repository\bin\Debug\EntityFramework.Extended.xml
+D:\Users\view01\Desktop\my\ZProject\Z.Core.Repository\bin\Debug\EntityFramework.SqlServer.xml
+D:\Users\view01\Desktop\my\ZProject\Z.Core.Repository\obj\Debug\Z.Core.Repository.csprojResolveAssemblyReference.cache
+D:\Users\view01\Desktop\my\ZProject\Z.Core.Repository\obj\Debug\Z.Core.Repository.dll
+D:\Users\view01\Desktop\my\ZProject\Z.Core.Repository\obj\Debug\Z.Core.Repository.pdb

@@ -34,7 +34,12 @@ namespace Z.Core.Repository
         /// <param name="isSave">是否保存到数据库</param>
         /// <returns></returns>
         bool Update(T entity);
-
+        /// <summary>
+        /// 批量修改
+        /// </summary>
+        /// <param name="where"></param>
+        /// <param name="list"></param>
+        void BatchUpdate(Expression<Func<T, bool>> where, Expression<Func<T, T>> list);
         /// <summary>
         /// 删除一个实体
         /// </summary>
