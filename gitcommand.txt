@@ -1,0 +1,20 @@
+
+
+本地仓库与远程之关联:git remote add origin git@github.com:mozeliang/learngit.git
+第一次提交到远程库：git push -u origin master
+提交到远程库：git push origin master
+
+添加所有文件: git add *.cache *.nupkg *.suo *.config *.sln *.pdb *.csproj *.txt *.dll *.xml *.cs
+提交本地文件: git commit -m''
+查看文件状态：git status
+
+创建SSH Key： ssh-keygen -t rsa -C "307096439@qq.com"
+
+查看当前分支：git branch
+创建分支：git branch dev
+切换分支：git checkout dev
+合并分支：git merge dev
+删除分支：git branch -d dev
+强制删除分支： git branch -D dev
+创建+切换分支：git checkout -b dev
+
