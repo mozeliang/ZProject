@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Core.Model", "Z.Core.Model\Z.Core.Model.csproj", "{5FD56B00-0958-40FD-8671-E59EEF5CFA41}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Core.Repository", "Z.Core.Repository\Z.Core.Repository.csproj", "{7C2FCCF4-2269-4C72-BDC0-69F3DD2EE698}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z.Core.Common", "Z.Core.Common\Z.Core.Common.csproj", "{D8947169-3CB7-413A-8D67-F7242CE3C46F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilityLibrary", "UtilityLibrary\UtilityLibrary.csproj", "{C68F364E-9557-4453-B67A-2C05490A0125}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D8947169-3CB7-413A-8D67-F7242CE3C46F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8947169-3CB7-413A-8D67-F7242CE3C46F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8947169-3CB7-413A-8D67-F7242CE3C46F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C68F364E-9557-4453-B67A-2C05490A0125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C68F364E-9557-4453-B67A-2C05490A0125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C68F364E-9557-4453-B67A-2C05490A0125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C68F364E-9557-4453-B67A-2C05490A0125}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
