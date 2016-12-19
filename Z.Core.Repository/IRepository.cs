@@ -12,7 +12,7 @@ using System.Threading.Tasks;
  */
 namespace Z.Core.Repository
 {
-    public interface IRepository<T> where T:class
+    public interface IRepository<T> where T : class
     {
         /// <summary>
         /// 创建一个实体
@@ -53,6 +53,13 @@ namespace Z.Core.Repository
         /// <param name="id"></param>
         /// <returns></returns>
         bool DeleteByID(int id);
+
+        /// <summary>
+        /// 删除
+        /// </summary>
+        /// <param name="where"></param>
+        /// <returns></returns>
+        bool BathDelete(Expression<Func<T, bool>> where);
 
         /// <summary>
         /// 获取一个实体

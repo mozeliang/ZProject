@@ -31,7 +31,10 @@ namespace Z.Core.Service.Main
                 s.Add(administrators);
             }
 
-            repository.BatchCreate(s);
+            var ad=new Administrators();
+            var ty = ad.GetType();
+            var getpro=ty.GetProperties();
+            //repository.BatchCreate(s);
 
             return administrators;
         }

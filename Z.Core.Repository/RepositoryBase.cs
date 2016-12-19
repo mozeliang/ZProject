@@ -194,6 +194,21 @@ namespace Z.Core.Repository
                 throw;
             }
         }
+
+        public virtual bool BathDelete(Expression<Func<T, bool>> where)
+        {
+            try
+            {
+                entities.Set<T>().Where<T>(where).Delete(where);
+
+                entities.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return true;
+        }
         /// <summary>
         /// 获取一个实体
         /// </summary>

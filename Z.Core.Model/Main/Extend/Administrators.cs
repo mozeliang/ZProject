@@ -8,5 +8,6 @@ namespace Z.Core.Model.Main
 {
     public partial class Administrators
     {
+        public string dd { get; set; }
     }
 }
