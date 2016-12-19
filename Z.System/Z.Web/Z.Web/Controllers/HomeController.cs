@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 using Z.Core.Service.Main;
 using Z.Core.Common;
+using UtilityLibrary;
 
 namespace Z.Web.Controllers
 {
@@ -14,8 +15,10 @@ namespace Z.Web.Controllers
         public ActionResult Index()
         {
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
-            var t=new AdministratorsService().Create();
+            //var t=new AdministratorsService().Create();
 
+            XmlUtility xm = new XmlUtility();
+            xm.test();
             
             Func<int, bool> f1 = IsNumberLessThen5;
             bool flag = f1(4);
