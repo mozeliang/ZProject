@@ -28,3 +28,5 @@ D:\Users\view01\Desktop\my\ZProject\Z.Core.Service\bin\Debug\EntityFramework.Ext
 D:\Users\view01\Desktop\my\ZProject\Z.Core.Service\obj\Debug\Z.Core.Service.csprojResolveAssemblyReference.cache
 D:\Users\view01\Desktop\my\ZProject\Z.Core.Service\obj\Debug\Z.Core.Service.dll
 D:\Users\view01\Desktop\my\ZProject\Z.Core.Service\obj\Debug\Z.Core.Service.pdb
+F:\MyWork\MyProject\ZProject\Z.Core.Service\bin\Debug\EntityFramework.Extended.dll
+F:\MyWork\MyProject\ZProject\Z.Core.Service\bin\Debug\EntityFramework.Extended.xml

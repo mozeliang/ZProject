@@ -222,3 +222,7 @@ D:\Users\view01\Desktop\my\ZProject\Z.System\Z.Web\Z.Web\obj\Debug\Z.Web.dll
 D:\Users\view01\Desktop\my\ZProject\Z.System\Z.Web\Z.Web\obj\Debug\Z.Web.pdb
 D:\Users\view01\Desktop\my\ZProject\Z.System\Z.Web\Z.Web\bin\UtilityLibrary.dll
 D:\Users\view01\Desktop\my\ZProject\Z.System\Z.Web\Z.Web\bin\UtilityLibrary.pdb
+F:\MyWork\MyProject\ZProject\z.System\Z.Web\Z.Web\bin\UtilityLibrary.dll
+F:\MyWork\MyProject\ZProject\z.System\Z.Web\Z.Web\bin\EntityFramework.Extended.dll
+F:\MyWork\MyProject\ZProject\z.System\Z.Web\Z.Web\bin\UtilityLibrary.pdb
+F:\MyWork\MyProject\ZProject\z.System\Z.Web\Z.Web\bin\EntityFramework.Extended.xml

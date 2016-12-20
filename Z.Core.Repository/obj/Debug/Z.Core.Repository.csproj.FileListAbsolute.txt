@@ -10,7 +10,6 @@ F:\MyWork\MyProject\ZProject\Z.Core.Repository\bin\Debug\EntityFramework.SqlServ
 F:\MyWork\MyProject\ZProject\Z.Core.Repository\obj\Debug\Z.Core.Repository.csprojResolveAssemblyReference.cache
 F:\MyWork\MyProject\ZProject\Z.Core.Repository\obj\Debug\Z.Core.Repository.dll
 F:\MyWork\MyProject\ZProject\Z.Core.Repository\obj\Debug\Z.Core.Repository.pdb
-F:\MyWork\MyProject\ZProject\Z.Core.Repository\bin\Debug\EntityFramework.Extensions.dll
 D:\Users\view01\Desktop\my\ZProject\Z.Core.Repository\bin\Debug\Z.Core.Repository.dll.config
 D:\Users\view01\Desktop\my\ZProject\Z.Core.Repository\bin\Debug\Z.Core.Repository.dll
 D:\Users\view01\Desktop\my\ZProject\Z.Core.Repository\bin\Debug\Z.Core.Repository.pdb
@@ -25,3 +24,5 @@ D:\Users\view01\Desktop\my\ZProject\Z.Core.Repository\bin\Debug\EntityFramework.
 D:\Users\view01\Desktop\my\ZProject\Z.Core.Repository\obj\Debug\Z.Core.Repository.csprojResolveAssemblyReference.cache
 D:\Users\view01\Desktop\my\ZProject\Z.Core.Repository\obj\Debug\Z.Core.Repository.dll
 D:\Users\view01\Desktop\my\ZProject\Z.Core.Repository\obj\Debug\Z.Core.Repository.pdb
+F:\MyWork\MyProject\ZProject\Z.Core.Repository\bin\Debug\EntityFramework.Extended.dll
+F:\MyWork\MyProject\ZProject\Z.Core.Repository\bin\Debug\EntityFramework.Extended.xml
