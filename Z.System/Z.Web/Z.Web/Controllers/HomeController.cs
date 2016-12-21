@@ -17,58 +17,50 @@ namespace Z.Web.Controllers
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
             //var t=new AdministratorsService().Create();
 
-            
 
-            int[] shuzu = new int[] { 5, 9, 4, 1, 3 };
 
-            ArrayOrderByUtility.QuickSortFunction(shuzu, 0, 4);
+            int[] _ar =  { 1, 2, 3, 10, 2, 5, 6, 54 } ;
 
-            for (int i = 0; i < shuzu.Length; i++)
-            {
-                var keyVale = shuzu[i];
-                for (int j = 0; j < shuzu.Length - i; j++)
-                {
-                    if (i != shuzu.Length - 1)
-                    {
+            //var r = new System.Random();
+            //for (int i = 0; i < 555000; i++)
+            //{
+            //    _ar[i]=r.Next(9999);
+            //}
+           
+            var strings="sd";
 
-                        if (shuzu[i + 1] < shuzu[i])
-                        {
-                            int a = shuzu[i];
-                            shuzu[i] = shuzu[i + 1];
-                            shuzu[i + 1] = a;
-                        }
-                    }
-                }
-            }
-
-            int[] _ar = { 10, 2, 3, 4, 0, 11 };
+            var startTime = new TimeSpan(DateTime.Now.Ticks);
+            var s = ArrayOrderByUtility.IntArrayAsc(_ar);
+            //Array.Sort(_ar);
+            var endTime = new TimeSpan(DateTime.Now.Ticks);
+            var sc = startTime.Subtract(endTime).Duration().TotalMilliseconds;
+            ViewBag.sc = sc;
+            var startTimes = new TimeSpan(DateTime.Now.Ticks);
             Array.Sort(_ar);
+            var endTimes = new TimeSpan(DateTime.Now.Ticks);
+            var scs = startTimes.Subtract(endTimes).Duration().TotalMilliseconds;
+
+            var startTimer = new TimeSpan(DateTime.Now.Ticks);
             Array.Reverse(_ar);
-
-            for (int i = 0; i < _ar.Length; i++)
-            {
-
-                for (int j = _ar.Length - 1; j >= 0; j--)
-                {
-                    var currentValue = _ar[0];
-                    var max = _ar[j];
-                    if (max > currentValue)
-                    {
-                        var min = _ar[j - 1];
-                        _ar[j - 1] = currentValue;
-                        _ar[0] = min;
-                    }
-                }
-            }
-
-
-            XmlUtility xm = new XmlUtility();
-            xm.test();
-
+            var endTimer = new TimeSpan(DateTime.Now.Ticks);
+            var scsr = startTimer.Subtract(endTimer).Duration().TotalMilliseconds;
+          
             Func<int, bool> f1 = IsNumberLessThen5;
             bool flag = f1(4);
 
             return View();
+        }
+
+        public int dg(int s)
+        {
+            var ddd = "";
+            var dddd = "";
+            if (s > 0)
+            {
+                s--;
+                dg(s);
+            }
+            return s;
         }
 
         private static bool IsNumberLessThen5(int number)

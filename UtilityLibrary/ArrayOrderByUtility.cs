@@ -13,6 +13,67 @@ namespace UtilityLibrary
 {
     public class ArrayOrderByUtility
     {
+
+        /// <summary>
+        /// int数组排序[升序]
+        /// 当数组长度过千上万时，不推荐使用，耗时很长，性能不好
+        /// </summary>
+        /// <param name="_intArray">int数组</param>
+        /// <returns>int[]</returns>
+        public static int[] IntArrayAsc(int[] _intArray)
+        {
+            for (int i = 0; i < _intArray.Length; i++)
+            {
+                var keyValue = _intArray[i];//当前最小
+                var keyIndex = 0;//记录索引
+                for (int j = i; j < _intArray.Length; j++)
+                {
+                    if (keyValue > _intArray[j])
+                    {
+                        keyValue = _intArray[j];
+                        keyIndex = j;
+                    }
+                }
+                if (keyIndex > 0)
+                {
+                    int temp = _intArray[keyIndex];
+                    _intArray[keyIndex] = _intArray[i];
+                    _intArray[i] = temp;
+                }
+            }
+            return _intArray;
+        }
+
+        /// <summary>
+        /// int数组排序[绛序]
+        /// 当数组长度过千上万时，不推荐使用，耗时很长，性能不好
+        /// </summary>
+        /// <param name="_intArray">int数组</param>
+        /// <returns>int[]</returns>
+        public static int[] IntArrayDesc(int[] _intArray)
+        {
+            for (int i = 0; i < _intArray.Length; i++)
+            {
+                var keyValue = _intArray[i];//当前最大值
+                var keyIndex = 0;//记录索引
+                for (int j = i; j < _intArray.Length; j++)
+                {
+                    if (keyValue < _intArray[j])
+                    {
+                        keyValue = _intArray[j];
+                        keyIndex = j;
+                    }
+                }
+                if (keyIndex > 0)
+                {
+                    int temp = _intArray[keyIndex];
+                    _intArray[keyIndex] = _intArray[i];
+                    _intArray[i] = temp;
+                }
+            }
+            return _intArray;
+        }
+
         /// <summary>
         /// 数组排序
         /// </summary>
@@ -35,7 +96,6 @@ namespace UtilityLibrary
             }
             catch (Exception)
             {
-
                 throw;
             }
             return _array;
