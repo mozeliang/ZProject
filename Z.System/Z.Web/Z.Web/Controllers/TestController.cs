@@ -17,6 +17,9 @@ namespace Z.Web.Controllers
         {
            
             weituo we = new weituo(weer);
+
+            var t = new test().name("name") ;
+            var t1 = new test1().name("dd");
             var s=we("weer");
             ViewBag.dc = s;
             return View();

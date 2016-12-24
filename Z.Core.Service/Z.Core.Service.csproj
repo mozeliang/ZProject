@@ -52,6 +52,7 @@
     <Compile Include="Main\AdministratorsService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test\test.cs" />
+    <Compile Include="Test\test1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

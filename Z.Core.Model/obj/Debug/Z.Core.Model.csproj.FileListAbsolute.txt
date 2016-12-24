@@ -14,6 +14,5 @@ D:\Users\view01\Desktop\my\ZProject\Z.Core.Model\bin\Debug\EntityFramework.dll
 D:\Users\view01\Desktop\my\ZProject\Z.Core.Model\bin\Debug\EntityFramework.SqlServer.dll
 D:\Users\view01\Desktop\my\ZProject\Z.Core.Model\bin\Debug\EntityFramework.xml
 D:\Users\view01\Desktop\my\ZProject\Z.Core.Model\bin\Debug\EntityFramework.SqlServer.xml
-D:\Users\view01\Desktop\my\ZProject\Z.Core.Model\obj\Debug\Z.Core.Model.csprojResolveAssemblyReference.cache
 D:\Users\view01\Desktop\my\ZProject\Z.Core.Model\obj\Debug\Z.Core.Model.dll
 D:\Users\view01\Desktop\my\ZProject\Z.Core.Model\obj\Debug\Z.Core.Model.pdb
