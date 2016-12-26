@@ -6,4 +6,3 @@ F:\MyWork\MyProject\ZProject\UtilityLibrary\bin\Debug\UtilityLibrary.dll
 F:\MyWork\MyProject\ZProject\UtilityLibrary\bin\Debug\UtilityLibrary.pdb
 F:\MyWork\MyProject\ZProject\UtilityLibrary\obj\Debug\UtilityLibrary.dll
 F:\MyWork\MyProject\ZProject\UtilityLibrary\obj\Debug\UtilityLibrary.pdb
-F:\MyWork\MyProject\ZProject\UtilityLibrary\obj\Debug\UtilityLibrary.csprojResolveAssemblyReference.cache

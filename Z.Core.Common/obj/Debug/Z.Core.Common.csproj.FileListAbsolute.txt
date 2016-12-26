@@ -6,4 +6,3 @@ D:\Users\view01\Desktop\my\ZProject\Z.Core.Common\bin\Debug\Z.Core.Common.dll
 D:\Users\view01\Desktop\my\ZProject\Z.Core.Common\bin\Debug\Z.Core.Common.pdb
 D:\Users\view01\Desktop\my\ZProject\Z.Core.Common\obj\Debug\Z.Core.Common.dll
 D:\Users\view01\Desktop\my\ZProject\Z.Core.Common\obj\Debug\Z.Core.Common.pdb
-F:\MyWork\MyProject\ZProject\Z.Core.Common\obj\Debug\Z.Core.Common.csprojResolveAssemblyReference.cache
